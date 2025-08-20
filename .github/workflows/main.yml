@@ -16,4 +16,9 @@ jobs:
           echo "Hello" > file.txt
           ls
       - name: Sleep Step
-        run: sleep 20
+        run: sleep 5
+      - name: My First Action
+        uses: actions/checkout@v5
+      - name: ls repo
+        run: |
+              ls
