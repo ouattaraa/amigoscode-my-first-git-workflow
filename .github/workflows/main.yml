@@ -1,17 +1,17 @@
 name: My First Workflow
 on:
- push:
-   branches:
-     - main
+  push:
+    branches:
+      - main
 
 jobs:
-  myFirstJob :
+  myFirstJob:
     runs-on: ubuntu-latest
     steps:
       - name: my First Step
         run: printenv
       - name: my Second Step
         run: |
-            echo "Amigoscode"
-            echo "Hello" > file.txt
-            ls
+          echo "Amigoscode"
+          echo "Hello" > file.txt
+          ls
